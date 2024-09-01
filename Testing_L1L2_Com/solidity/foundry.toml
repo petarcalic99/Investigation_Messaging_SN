@@ -1,0 +1,17 @@
+[profile.default]
+evm_version = "shanghai"
+rpc_url = "https://eth-mainnet.g.alchemy.com/v2/ahUN0V5iw3yB0MlC9psJRUWFPSgIRFrx"
+src = "src"
+out = "out"
+fs_permissions = [{ access = "read-write", path = "./logs"}]
+libs = ["lib"]
+remappings = ["openzeppelin-erc20-basic/=lib/openzeppelin-contracts/contracts/token/ERC20/",
+    "openzeppelin-math/=lib/openzeppelin-contracts-upgradeable/contracts/utils/math/",
+    "openzeppelin-erc20/=lib/openzeppelin-contracts-upgradeable/contracts/token/ERC20/",
+    "openzeppelin-erc20-extensions/=lib/openzeppelin-contracts-upgradeable/contracts/token/ERC20/extensions",
+    "openzeppelin-utils/=lib/openzeppelin-contracts-upgradeable/contracts/utils/",
+    "openzeppelin-proxy/=lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils",
+    "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+    "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
